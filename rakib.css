@@ -1,0 +1,267 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+img{
+    max-width: 50%;
+}
+
+.fixed-width{
+    width: 1200px;
+    margin: auto;
+}
+
+/* header section  */
+.header-section{
+    background: linear-gradient(to left, #00ebbc 0%, #007bdf 100%);
+}
+.header-left{
+    float: left;
+    width: 40%;
+}
+.logo span{
+    display: inline-block;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600px;
+    margin-top: 40px;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    float: left;
+}
+.header-right{
+    float: right;
+    width: 60%;
+}
+.header-right ul{
+
+}
+.header-right ul li{
+    display: inline-block;
+    line-height: 100px;
+}
+.header-right ul li a{
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0px 15px;
+    font-family: sans-serif;
+    font-weight: 600px;
+    
+}
+.primary-menu ul li a:hover{
+    background: red;
+}
+
+/* dropdown menu  */
+.primary-menu ul li{
+    position: relative;
+    z-index: 99;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 160px;
+    background: rgb(105, 105, 247);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    transform: scaleY(0);
+    transform-origin: top;
+    transform-origin: top center;
+}
+
+.primary-menu ul li:hover ul{
+    
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.menu1:hover > .menu2{
+    background: red;
+}
+
+/* banner section  */
+.banner-section{
+    background: url(./keyboard.jpg);
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    z-index: 9;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(to left, #00ebbc 0%, #007bdf 100%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+.banner-content{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600px;
+}
+
+/* container  */
+.container-content{
+    text-align: center;
+    margin-top: 20px;
+}
+.container-content h1{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+.container-content p{
+    width: 500px;
+    margin-left: 330px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600px;
+}
+
+
+
+.container-content2{
+    float: left;
+    width: 60%;
+    margin-top: 40px;
+}
+.container-content2 img{
+    max-width: 90%;
+    height: auto;
+}
+.container-content3{
+    float: right;
+    width: 40%;
+    margin-top: 40px;
+}
+.container-content3 p{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 46px;
+}
+.container-content3 p{
+    margin-bottom: 30px;
+    font
+}
+.con{
+    background: -webkit-linear-gradient(left, #00ebbc 0%, #007bdf 100%);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.con span{
+    font-size: 20px;
+
+}
+.con h1{
+    display: inline-block;
+    font-size: 20px;
+}
+
+/* features  */
+.area-title{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    
+}
+.all-features-left{
+    float: left;
+    width: 30%;
+    
+}
+.part-img{
+    float: left;
+    width: 30%;
+    text-align: center;
+    
+    
+}
+.all-features-right{
+    float: right;
+    width: 30%;
+   
+}
+.part-icon{
+    color: #6278df;
+    font-size: 30px;
+    float: right;
+    height: 100%;
+    margin-left: 10px
+}
+.part-icon2{
+    float: left;
+    margin-right: 10px;
+    min-height: 50px;
+    color: #6278df;
+    font-size: 30px;
+}
+.single-feature{
+    padding: 20px;
+}
+
+.single-feature-right{
+    padding: 30px;
+}
+.rakib{
+    background: -webkit-linear-gradient(left, #00ebbc 0%, #007bdf 100%);
+}
+
+/* deal */
+.deal2{
+    float: left;
+    width: 40%;
+    width: 300px;
+    height: auto;
+    background: red;
+    padding: 35px;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-right: 60px;
+    box-sizing: border-box;
+    box-shadow: 20px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+  
+}
+.deal2 h2{
+    text-align: center;
+}
+.deal2::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 32px 0 32px 50px;
+    border-color: transparent transparent transparent #007bff;
+}
